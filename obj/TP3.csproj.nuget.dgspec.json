@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\4°\\programacion\\TP3_Berenstein_Dujovne\\TP3\\TP3.csproj": {}
+    "Z:\\4°\\programacion\\TP3\\TP3.csproj": {}
   },
   "projects": {
-    "Z:\\4°\\programacion\\TP3_Berenstein_Dujovne\\TP3\\TP3.csproj": {
+    "Z:\\4°\\programacion\\TP3\\TP3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\4°\\programacion\\TP3_Berenstein_Dujovne\\TP3\\TP3.csproj",
+        "projectUniqueName": "Z:\\4°\\programacion\\TP3\\TP3.csproj",
         "projectName": "TP3",
-        "projectPath": "Z:\\4°\\programacion\\TP3_Berenstein_Dujovne\\TP3\\TP3.csproj",
+        "projectPath": "Z:\\4°\\programacion\\TP3\\TP3.csproj",
         "packagesPath": "C:\\Users\\49836363\\.nuget\\packages\\",
-        "outputPath": "Z:\\4°\\programacion\\TP3_Berenstein_Dujovne\\TP3\\obj\\",
+        "outputPath": "Z:\\4°\\programacion\\TP3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
