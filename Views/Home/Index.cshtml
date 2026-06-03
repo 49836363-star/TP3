@@ -6,12 +6,20 @@
     <h1 class="display-4">Ahorcado</h1>
     <p>El juego del Ahorcado consiste en adivinar una palabra oculta ingresando letras una por una. Cada vez que el jugador acierta, la letra se muestra en la palabra, y si falla pierde un intento. El objetivo es descubrir la palabra completa antes de quedarse sin intentos.</p>
     <section>
+        <p id="intentosRestantes">1</p>
         <div>
-            <p>@for(int i=0; i<ViewBag.palabraAdivinar.Length; i++)
-            {
-                @Html.Raw(value:"_")
-            }
-            </p>
+            <h2 id="palabraOculta">
+                
+                @for(int i=0; i<ViewBag.palabraAdivinar.Length; i++)
+                {
+                    @Html.Raw(value:"_");
+                }
+            </h2>
+            <input type="text" id="letra"> 
+            <input type="hidden" id="palabraAdivinar" value="@ViewBag.palabraAdivinar">
+            <input type="button" value="Arriesgar" onclick="ArriesgarLetra()">
+
         </div>
+
     </section>
 </div>

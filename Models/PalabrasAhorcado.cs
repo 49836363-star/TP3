@@ -4,7 +4,7 @@ public class PalabrasAhorcado
 {
     private List<string> palabras;
 
-    public PalabrasAhorcado(List<string> palabras)
+    public PalabrasAhorcado()
     {
         this.palabras= new List <string>() {"RINOCERONTE","LIBERTADORES","SUDAMERICANA","CONFERENCIA","COMPUTADORA","PROCESADOR","PANTALON","PIZARRON","ANTEOJOS","VENTILADOR"};
     }
