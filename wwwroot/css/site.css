@@ -29,3 +29,34 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.text-center
+{
+    margin-top: 30px;
+}
+
+#palabraOculta
+{
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+#intentosRestantes
+{
+    color: red;
+    font-size: 25px;
+}
+
+#mensaje
+{
+    color: red;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+input
+{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}

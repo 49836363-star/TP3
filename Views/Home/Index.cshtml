@@ -4,9 +4,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Ahorcado</h1>
-    <p>El juego del Ahorcado consiste en adivinar una palabra oculta ingresando letras una por una. Cada vez que el jugador acierta, la letra se muestra en la palabra, y si falla pierde un intento. El objetivo es descubrir la palabra completa antes de quedarse sin intentos.</p>
+    <p>El juego del Ahorcado consiste en adivinar una palabra oculta ingresando letras una por una. Cada vez que el jugador acierta, la letra se muestra en la palabra, y si falla pierde un intento. El objetivo es descubrir la palabra completa antes de quedarse sin intentos. Tiene 10 intentos</p>
     <section>
-        <p id="intentosRestantes">1</p>
+        <p>Intentos: </p> <p id="intentosRestantes"> 1 </p> 
         <div>
             <h2 id="palabraOculta">
                 
@@ -18,7 +18,7 @@
             <input type="text" id="letra"> 
             <input type="hidden" id="palabraAdivinar" value="@ViewBag.palabraAdivinar">
             <input type="button" value="Arriesgar" onclick="ArriesgarLetra()">
-
+            <h2 id="mensaje"></h2>
         </div>
 
     </section>
