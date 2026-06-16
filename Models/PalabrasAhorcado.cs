@@ -3,10 +3,12 @@ namespace TP3.Models;
 public class PalabrasAhorcado
 {
     private List<string> palabras;
-
+    public BD BaseDatos;
     public PalabrasAhorcado()
     {
-        this.palabras= new List <string>() {"RINOCERONTE","LIBERTADORES","SUDAMERICANA","CONFERENCIA","COMPUTADORA","PROCESADOR","PANTALON","PIZARRON","ANTEOJOS","VENTILADOR"};
+        this.BaseDatos = new BD();
+        this.palabras = new List<string>();
+        this.palabras = BaseDatos.LevantarPalabra();
     }
     public string ObtenerPalabra()
     {
