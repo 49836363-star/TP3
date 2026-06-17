@@ -8,7 +8,6 @@ public class BD
     
     public List<string> LevantarPalabra()
     {
-
         List<string> palabras = new List<string>();
         using(SqlConnection connection = new SqlConnection(connectionString))
         {
@@ -16,6 +15,16 @@ public class BD
             palabras = connection.Query<string>(query).ToList();
         }
         return palabras;
+    }
+
+    public void AgregarPalabra(string palabraNueva)
+    {
+        string query = "INSERT INTO Palabras (palabra) VALUES (@palabraNueva)";
+        using(SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Execute(query, new{ palabra = palabraNueva});
+        }
+       
     }
     
 }

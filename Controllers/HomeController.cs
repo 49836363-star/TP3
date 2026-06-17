@@ -21,6 +21,14 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    public IActionResult GuardarPalabra(string palabraNueva)
+    {
+        PalabrasAhorcado palabras = new PalabrasAhorcado();
+        palabras.InsertarPalabra(palabraNueva);
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Privacy()
     {
         return View();

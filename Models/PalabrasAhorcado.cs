@@ -16,5 +16,10 @@ public class PalabrasAhorcado
         string palabraEnJuego = palabras[rd.Next(0, palabras.Count)];
         return palabraEnJuego;
     }
+    public void InsertarPalabra(string palabraNueva)
+    {
+        BD MiBase = new BD();
+        MiBase.AgregarPalabra(palabraNueva);
+    }
 
 }

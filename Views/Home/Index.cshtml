@@ -21,7 +21,11 @@
             <h2 id="mensaje"></h2>
         </div>
         <div>
-            
+                <form action='@Url.Action("GuardarPalabra", "Home")' method="POST" enctype="multipart/form-data">
+                <h1> Agregar palabra </h1>
+                <p>Agregar Palabra: <input type="text" name="palabraNueva"/>
+                <input type="submit" value="Agregar Palabra"/> </p>
+                </form>
         </div>
     </section>
 </div>
