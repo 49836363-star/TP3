@@ -19,10 +19,10 @@ public class BD
 
     public void AgregarPalabra(string palabraNueva)
     {
-        string query = "INSERT INTO Palabras (palabra) VALUES (@palabraNueva)";
+        string query = "INSERT INTO Palabras (palabra) VALUES (@parametropalabra)";
         using(SqlConnection connection = new SqlConnection(connectionString))
         {
-            connection.Execute(query, new{ palabra = palabraNueva});
+            connection.Execute(query, new{ parametropalabra = palabraNueva});
         }
        
     }
