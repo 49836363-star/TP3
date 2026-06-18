@@ -19,7 +19,7 @@ public class PalabrasAhorcado
     public void InsertarPalabra(string palabraNueva)
     {
         BD MiBase = new BD();
-        MiBase.AgregarPalabra(palabraNueva);
+        MiBase.AgregarPalabra(palabraNueva.ToUpper());
     }
 
 }
